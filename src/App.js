@@ -13,6 +13,7 @@ import {
 } from '@chakra-ui/react';
 import nameImage from './name-revealed.webp';
 import { useState } from 'react';
+import { useMediaQuery } from '@chakra-ui/react';
 
 function App() {
     const [showName, setShowName] = useState(false);
@@ -26,11 +27,13 @@ function App() {
         setShowName(false);
     };
 
+    const [isDesktop] = useMediaQuery('(min-width: 400px)');
+
     return (
         <ChakraProvider>
             <main>
                 <article>
-                    <Heading as="h1" size="lg" noOfLines={1}>
+                    <Heading as="h1" size="lg">
                         <Highlight
                             query="prénom"
                             styles={{
@@ -43,40 +46,42 @@ function App() {
                             Envie de découvirir son prénom ?
                         </Highlight>
                     </Heading>
-
-                    <Stack direction="column">
-                        <Box
-                            display="flex"
-                            alignItems="center"
-                            justifyContent="center"
-                            width="100%"
-                            py={12}
-                            mb={2}
-                        >
-                            <ButtonGroup gap="4">
-                                <Button
-                                    colorScheme="teal"
-                                    onClick={handleYesButton}
-                                >
-                                    Bah, oui 😁
-                                </Button>
-                                <Button
-                                    colorScheme="yellow"
-                                    onClick={handleNoButton}
-                                >
-                                    Hum, non 🥶
-                                </Button>
-                            </ButtonGroup>
-                        </Box>
-                    </Stack>
+                    <Box
+                        display="flex"
+                        alignItems="center"
+                        justifyContent="center"
+                        width="100%"
+                        py={12}
+                        mb={2}
+                    >
+                        <Stack gap="4" direction={isDesktop ? 'row' : 'column'}>
+                            <Button
+                                colorScheme="teal"
+                                onClick={handleYesButton}
+                            >
+                                Bah, oui 😁
+                            </Button>
+                            <Button
+                                colorScheme="yellow"
+                                onClick={handleNoButton}
+                            >
+                                Hum, non 🥶
+                            </Button>
+                        </Stack>
+                    </Box>
                     {showName && (
-                        <AspectRatio maxW="100%" ratio={4 / 3}>
-                            <Image
-                                src={nameImage}
-                                alt="naruto"
-                                objectFit="cover"
-                            />
-                        </AspectRatio>
+                        <>
+                            <AspectRatio maxW="100%" ratio={4 / 3}>
+                                <Image
+                                    src={nameImage}
+                                    alt="naruto"
+                                    objectFit="cover"
+                                />
+                            </AspectRatio>
+                            <Text fontSize="2rem" color="teal">
+                                Il s'appelle Noam 👶
+                            </Text>
+                        </>
                     )}
                     {displayNoMessage && (
                         <Text fontSize="2rem" color="teal">
