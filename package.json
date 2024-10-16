@@ -2,7 +2,7 @@
   "name": "name-revealed",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sevan-k.github.io/react-gh-pages",
+  "homepage": "https://sevan-k.github.io/name-revealed/",
   "dependencies": {
     "@chakra-ui/react": "^2.10.2",
     "@emotion/react": "^11.13.3",
