@@ -4,7 +4,7 @@ import { useMediaQuery } from '@chakra-ui/react';
 
 const RevealButtons = ({ handleYesButton, handleNoButton }) => {
     const [isDesktop] = useMediaQuery('(min-width: 400px)');
-    
+
     return (
         <article>
             <Heading as="h2" size="lg">
