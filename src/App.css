@@ -1,5 +1,6 @@
 .App {
     text-align: center;
+    scroll-behavior: smooth;
 }
 
 main {
@@ -11,9 +12,20 @@ main {
     text-align: center;
 }
 
-article {
+main > article,
+main > div {
     max-width: 612px;
     margin: auto;
     text-align: center;
     padding-top: 2rem;
+}
+
+.loader {
+    padding: 4rem 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
 }

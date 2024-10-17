@@ -5,6 +5,7 @@
   "homepage": "https://sevan-k.github.io/name-revealed/",
   "dependencies": {
     "@chakra-ui/react": "^2.10.2",
+    "@chakra-ui/transition": "^2.1.0",
     "@emotion/react": "^11.13.3",
     "@emotion/styled": "^11.13.0",
     "@testing-library/jest-dom": "^5.17.0",
