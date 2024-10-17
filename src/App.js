@@ -6,14 +6,17 @@ import {
     Stack,
     Box,
     Button,
-    ButtonGroup,
     Heading,
     Text,
     Highlight,
+    Card,
+    CardHeader,
+    CardFooter,
 } from '@chakra-ui/react';
-import nameImage from './name-revealed.webp';
 import { useState } from 'react';
 import { useMediaQuery } from '@chakra-ui/react';
+import nameImage from './name-revealed.webp';
+import diegoImage from './diego-yoyo.webp';
 
 function App() {
     const [showName, setShowName] = useState(false);
@@ -32,8 +35,12 @@ function App() {
     return (
         <ChakraProvider>
             <main>
+                <Heading as="h1" size="xl" color="teal">
+                    Name revealed 🥁
+                </Heading>
+
                 <article>
-                    <Heading as="h1" size="lg">
+                    <Heading as="h2" size="lg">
                         <Highlight
                             query="prénom"
                             styles={{
@@ -70,23 +77,36 @@ function App() {
                         </Stack>
                     </Box>
                     {showName && (
-                        <>
+                        <Card maxW="100%">
                             <AspectRatio maxW="100%" ratio={4 / 3}>
                                 <Image
                                     src={nameImage}
-                                    alt="naruto"
+                                    alt="Image of the name 'Noam' in cursive style, knitted with a fine Prussian blue thread on a wooden background"
                                     objectFit="cover"
                                 />
                             </AspectRatio>
-                            <Text fontSize="2rem" color="teal">
-                                Il s'appelle Noam 👶
-                            </Text>
-                        </>
+                            <CardFooter justify="center">
+                                <Text fontSize="2rem" color="teal">
+                                    Il s'appelle Noam 👶
+                                </Text>
+                            </CardFooter>
+                        </Card>
                     )}
                     {displayNoMessage && (
-                        <Text fontSize="2rem" color="teal">
-                            Peut être plus tard 😉
-                        </Text>
+                        <Card maxW="100%">
+                            <CardHeader>
+                                <Text fontSize="2rem" color="teal">
+                                    Peut être plus tard 😉
+                                </Text>
+                            </CardHeader>
+                            <AspectRatio maxW="100%" ratio={5 / 6}>
+                                <Image
+                                    src={diegoImage}
+                                    alt="Image of the famous cat Diego on a yoyo"
+                                    objectFit="cover"
+                                />
+                            </AspectRatio>
+                        </Card>
                     )}
                 </article>
             </main>
