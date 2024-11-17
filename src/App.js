@@ -1,11 +1,11 @@
 import './App.css';
 import { ChakraProvider } from '@chakra-ui/react';
-import RevealNameMain from './Components/RevealNameMain';
+import BirthTab from './Components/BirthTab';
 
 function App() {
     return (
         <ChakraProvider>
-            <RevealNameMain />
+            <BirthTab />
         </ChakraProvider>
     );
 }
