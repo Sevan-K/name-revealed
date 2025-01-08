@@ -10,7 +10,7 @@ import {
 import calandarIcon from '../../media/calendar.png';
 import weighingMachineIcon from '../../media/weighing-machine.png';
 import heightIcon from '../../media/height.png';
-import diegoImage from '../../media/diego-yoyo.webp';
+import helloWorldNoam from '../../media/hello-world-noam.jpeg';
 
 const BirthAnnouncement = () => {
     const [isDesktop] = useMediaQuery('(min-width: 712px)');
@@ -25,14 +25,15 @@ const BirthAnnouncement = () => {
                     gap="2rem"
                 >
                     <Image
-                        src={diegoImage}
-                        alt="Image of the famous cat Diego on a yoyo"
+                        src={helloWorldNoam}
+                        alt="Image Noam smiling and saying Hello World!"
                         objectFit="cover"
                         loading="lazy"
-                        borderRadius="full"
-                        boxSize="200px"
+                        borderRadius="1rem"
+                        boxSize={isDesktop ? '50%' : '75%'}
                     />
                 </Flex>
+                {/* TODO: use a map instead of repeating cards */}
                 <Flex
                     flexDirection={isDesktop ? 'row' : 'column'}
                     justifyContent="center"
@@ -50,7 +51,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Il est né le ...
+                                Il est né le 23/11/2024
                             </Text>
                         </CardFooter>
                     </Card>
@@ -64,7 +65,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Pèse ... kg
+                                Pesait 3,040 kg
                             </Text>
                         </CardFooter>
                     </Card>
@@ -78,7 +79,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Mesure ... cm
+                                Mesurait 50,5 cm
                             </Text>
                         </CardFooter>
                     </Card>
