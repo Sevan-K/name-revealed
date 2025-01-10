@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/name-revealed/static/css/main.9871ffde.css",
-    "main.js": "/name-revealed/static/js/main.d30ba758.js",
+    "main.css": "/name-revealed/static/css/main.6dec8d2d.css",
+    "main.js": "/name-revealed/static/js/main.eb43b3ca.js",
     "static/js/453.d3fe6c45.chunk.js": "/name-revealed/static/js/453.d3fe6c45.chunk.js",
+    "static/media/hello-world-noam.jpeg": "/name-revealed/static/media/hello-world-noam.58cf38348eb7d5ac8cc0.jpeg",
     "static/media/name-revealed.webp": "/name-revealed/static/media/name-revealed.ade4e4f1509e7d5b55ee.webp",
     "static/media/diego-yoyo.webp": "/name-revealed/static/media/diego-yoyo.b9be58540eca86873067.webp",
+    "static/media/height.png": "/name-revealed/static/media/height.eb850888552cd0243a82.png",
+    "static/media/weighing-machine.png": "/name-revealed/static/media/weighing-machine.da3f758e73c7fbce8ad6.png",
     "static/media/name-reveal-logo-192x192.png": "/name-revealed/static/media/name-reveal-logo-192x192.578dc74dcb643bdcd46d.png",
     "index.html": "/name-revealed/index.html",
-    "main.9871ffde.css.map": "/name-revealed/static/css/main.9871ffde.css.map",
-    "main.d30ba758.js.map": "/name-revealed/static/js/main.d30ba758.js.map",
+    "main.6dec8d2d.css.map": "/name-revealed/static/css/main.6dec8d2d.css.map",
+    "main.eb43b3ca.js.map": "/name-revealed/static/js/main.eb43b3ca.js.map",
     "453.d3fe6c45.chunk.js.map": "/name-revealed/static/js/453.d3fe6c45.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9871ffde.css",
-    "static/js/main.d30ba758.js"
+    "static/css/main.6dec8d2d.css",
+    "static/js/main.eb43b3ca.js"
   ]
 }
