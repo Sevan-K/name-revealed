@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, AspectRatio, Text, Card, CardHeader } from '@chakra-ui/react';
-import diegoImage from '../media/diego-yoyo.webp';
+import diegoImage from '../../media/diego-yoyo.webp';
 
 const RevealLaterCard = () => {
     return (

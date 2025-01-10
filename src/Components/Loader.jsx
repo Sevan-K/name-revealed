@@ -5,7 +5,7 @@ import nameRevealLogo from '../media/name-reveal-logo-192x192.png';
 const delay = 1000; //1s
 let setTimeoutInstance;
 
-export const Loader = ({ loading, children }) => {
+const Loader = ({ loading, children }) => {
     const [isExpired, setIsExpired] = useState(true);
 
     useEffect(() => {

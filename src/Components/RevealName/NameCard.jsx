@@ -1,6 +1,6 @@
 import React from 'react';
 import { Image, AspectRatio, Text, Card, CardFooter } from '@chakra-ui/react';
-import nameImage from '../media/name-revealed.webp';
+import nameImage from '../../media/name-revealed.webp';
 
 const NameCard = () => {
     return (

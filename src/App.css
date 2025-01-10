@@ -13,7 +13,8 @@ main {
 }
 
 main > article,
-main > div {
+main > div,
+section > article {
     max-width: 612px;
     margin: auto;
     text-align: center;
