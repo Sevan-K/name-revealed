@@ -51,7 +51,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Il est né le 23/11/2024
+                                23/11/2024
                             </Text>
                         </CardFooter>
                     </Card>
@@ -65,7 +65,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Pesait 3,040 kg
+                                3,040 kg
                             </Text>
                         </CardFooter>
                     </Card>
@@ -79,7 +79,7 @@ const BirthAnnouncement = () => {
                         />
                         <CardFooter justify="center">
                             <Text fontSize="1.5rem" color="teal.700">
-                                Mesurait 50,5 cm
+                                50,5 cm
                             </Text>
                         </CardFooter>
                     </Card>
